@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(py -c \"import sys; sys.path.insert\\(0,'src'\\); from core.config import LLM_MODEL, OPENAI_MODEL; from guardrails.rate_limiter import RateLimiter; from guardrails.input_guardrails import detect_injection, topic_filter; from guardrails.output_guardrails import content_filter; from guardrails.llm_judge import LlmJudge; from guardrails.session_anomaly import SessionAnomalyDetector; from guardrails.nemo_guardrails import NEMO_AVAILABLE; from core.pipeline import DefensePipeline; from agents.agent import create_unsafe_agent; print\\('ALL IMPORTS OK'\\); print\\('NeMo:', NEMO_AVAILABLE\\)\")"
+    ]
+  }
+}

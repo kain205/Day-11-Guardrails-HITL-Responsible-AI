@@ -1,22 +1,28 @@
 """
-Lab 11 — Helper Utilities
+Assignment 11 — Helper Utilities
 """
 from google.genai import types
 
 
-async def chat_with_agent(agent, runner, user_message: str, session_id=None):
-    """Send a message to the agent and get the response.
+async def chat_with_agent(
+    agent,
+    runner,
+    user_message: str,
+    session_id: str | None = None,
+    user_id: str = "student",
+) -> tuple[str, object]:
+    """Send a message to an ADK agent and return the response text.
 
     Args:
-        agent: The LlmAgent instance
-        runner: The InMemoryRunner instance
-        user_message: Plain text message to send
-        session_id: Optional session ID to continue a conversation
+        agent:        The LlmAgent instance.
+        runner:       The InMemoryRunner instance.
+        user_message: Plain text message to send.
+        session_id:   Optional session ID to continue an existing conversation.
+        user_id:      User identifier (used by rate limiter & session anomaly plugins).
 
     Returns:
-        Tuple of (response_text, session)
+        Tuple of (response_text, session).
     """
-    user_id = "student"
     app_name = runner.app_name
 
     session = None
@@ -29,14 +35,9 @@ async def chat_with_agent(agent, runner, user_message: str, session_id=None):
             pass
 
     if session is None:
-        try:
-            session = await runner.session_service.create_session(
-                app_name=app_name, user_id=user_id
-            )
-        except Exception:
-            session = await runner.session_service.create_session(
-                app_name=app_name, user_id=user_id
-            )
+        session = await runner.session_service.create_session(
+            app_name=app_name, user_id=user_id
+        )
 
     content = types.Content(
         role="user",
