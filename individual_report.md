@@ -40,9 +40,9 @@ User Input
 
 ---
 
-## Phần B: Báo Cáo Cá Nhân (40 điểm)
+## Phần B: Báo Cáo Cá Nhân 40 điểm
 
-### Câu 1 — Phân tích Layer Analysis (10 điểm)
+### Câu 1 — Phân tích Layer Analysis 10 điểm
 
 Lớp nào chặn từng cuộc tấn công trước tiên?
 
@@ -60,7 +60,7 @@ Lớp nào chặn từng cuộc tấn công trước tiên?
 
 ---
 
-### Câu 2 — False Positive Analysis (8 điểm)
+### Câu 2 — False Positive Analysis 8 điểm
 
 **Kết quả:** Không có false positive trên 5 câu hỏi an toàn từ Test 1.
 
@@ -82,7 +82,7 @@ Lớp nào chặn từng cuộc tấn công trước tiên?
 
 ---
 
-### Câu 3 — Gap Analysis: 3 Attacks Không Bị Chặn (10 điểm)
+### Câu 3 — Gap Analysis: 3 Attacks Không Bị Chặn 10 điểm
 
 **Tấn công 1: In-context injection ẩn trong câu hỏi hợp lệ**
 
@@ -114,7 +114,7 @@ Lớp nào chặn từng cuộc tấn công trước tiên?
 
 ---
 
-### Câu 4 — Production Readiness ở 10,000 Người Dùng (7 điểm)
+### Câu 4 — Production Readiness ở 10,000 Người Dùng 7 điểm
 
 | Vấn đề | Hiện tại | Cần thay đổi |
 |---|---|---|
@@ -130,7 +130,7 @@ Lớp nào chặn từng cuộc tấn công trước tiên?
 
 ---
 
-### Câu 5 — Ethical Reflection (5 điểm)
+### Câu 5 — Ethical Reflection 5 điểm
 
 **Có thể xây AI "hoàn toàn an toàn" không?**
 

@@ -1,5 +1,8 @@
 # Day-11-Guardrails-HITL-Responsible-AI
 
+**Individual report:** [individual_report.md](individual_report.md)  
+**Student:** Nguyễn Bình Thành — 2A202600138
+
 Day 11 — Guardrails, HITL & Responsible AI: How to make agent applications safe?
 
 ## Objectives
